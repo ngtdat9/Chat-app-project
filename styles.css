@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.logout {
+  color: #4b8fea;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.find-user {
+  margin: 20px 5px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.find-user input[type="text"] {
+  width: calc(100% - 50px);
+  height: 41px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+}
+.find-user button {
+  width: 47px;
+  height: 42px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #4b8fea;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.user-list {
+  overflow-y: auto;
+  max-height: 520px;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat-placeholder {
+  text-align: center;
+  color: #888;
+}
+
+header .logout {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 15px;
+  background: #4b8fea;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-right: 5px;
+}
+.user-list a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  gap: 10px;
+  margin-bottom: 15px;
+  page-break-after: 10px;
+  padding-right: 15px;
+  border-bottom-color: #f1f1f1;
+}
+
+.user-list a .user-item {
+  display: flex;
+  align-items: center;
+}
+.user-list a .user-item p {
+  color: #67676a;
+}
+.user-list .details {
+  margin-left: 15px;
+  color: #000;
+}
+.user-list .details span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user-list a .user-item img {
+  height: 40px;
+  width: 40px;
+}
+
+.user-list a .status-dot {
+  font-size: 12px;
+  color: #468669;
+  margin-right: 5px;
+}
+
+.user-list a .status-dot.offline {
+  color: #ccc;
+}
+
+.user-list a:link {
+  text-decoration: none;
+}
+.user-list a:visited {
+  text-decoration: none;
+}
+.user-list a:hover {
+  text-decoration: none;
+}
+.user-list a:active {
+  text-decoration: none;
+}
+.user-list a:hover {
+  background-color: #f0f0f0;
+}
+.user-list a:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+
+/* Chat area page */
+.chat-area header {
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+}
+
+.chat-area header img {
+  height: 45px;
+  width: 45px;
+}
+.chat-area header span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.chat-box {
+  height: 100%;
+  background-color: #fff;
+  padding: 10px 30px 20px 30px;
+  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .chat {
+  margin: 0;
+}
+.chat-box .chat p {
+  padding: 8px 16px;
+  box-shadow: inset 0 0 32px rgb(0 0 0 / 8%),
+    inset 0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chat-box .outgoing {
+  display: flex;
+}
+.outgoing .details {
+  margin-left: auto;
+  max-width: calc(100%-130px);
+}
+.outgoing .details p {
+  background: #4b8fea;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming {
+  display: flex;
+  align-items: center;
+}
+
+.chat-box .incoming img {
+  height: 35px;
+  width: 35px;
+}
+.incoming .details p {
+  background: #f7f7f7;
+  border-radius: 18px 18px 18px 0;
+}
+.incoming .details {
+  margin-left: 10px;
+  margin-right: auto;
+  max-width: calc(100%-130px);
+}
