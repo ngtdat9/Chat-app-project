@@ -83,6 +83,11 @@ body {
   border-radius: 4px;
 }
 
+.find-user button.active {
+  color: #fff;
+  background: #333;
+}
+
 .user-list {
   padding: 10px 0;
 }
